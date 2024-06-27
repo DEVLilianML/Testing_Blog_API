@@ -6,7 +6,7 @@ import mongoose from 'mongoose'; // Importing Mongoose for MongoDB interaction
 
 describe('Post Routes', () => { // Describe block for grouping tests related to the Post routes
     before(async () => { // Before hook to connect to the MongoDB database before running tests
-        await mongoose.connect("mongodb://127.0.0.1:27017/test_posts"); // Connect to the test database
+        await mongoose.connect("mongodb://localhost:27017/backenduju"); // Connect to the test database
     });
 
     after(async () => { // After hook to clean up the database and close the connection after running tests
